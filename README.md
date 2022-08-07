@@ -1,2 +1,2 @@
-# suicide-detector-api
-api for the coty project i made suicide detector 
+# Alfred API
+Contains the cv and suicide detection crap used in alfred
