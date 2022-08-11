@@ -5,6 +5,7 @@ import requests
 import os
 from PIL import Image
 from io import BytesIO
+import imageio.v3 as imgio
 def GnP(url):
     # download the image, convert it to a NumPy array, and then read
     # it into OpenCV format
@@ -15,6 +16,10 @@ def GnP(url):
     # return the image
     image = cv.cvtColor(image, cv.COLOR_RGBA2RGB)
     return image
+
+def get_gif(url):
+    frames = iio.imread(url, index=None)
+    return frames
 
 
 
